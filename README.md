@@ -13,4 +13,5 @@ Para configurarlo se puede hacer de forma manual siguiendo las siguientes reglas
 - carpeta/ → ignora todo el contenido de la carpeta.
 - *.extencion → ignora todos los archivo de esta `extención`. 
 - !archivo.extención → no ignora este archivo en específico.
+  
 Pero también existen herramientas como [GitIgnore.io](https://www.gitignore.io/) que ayudan a configurar el archivo de forma más simple.
