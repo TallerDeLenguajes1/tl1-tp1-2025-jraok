@@ -16,3 +16,4 @@ Para configurarlo se puede hacer de forma manual siguiendo las siguientes reglas
 
 Pero también existen herramientas como [GitIgnore.io](https://www.gitignore.io/) que ayudan a configurar el archivo de forma más simple.
 
+
