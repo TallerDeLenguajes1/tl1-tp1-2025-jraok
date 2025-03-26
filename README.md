@@ -16,4 +16,6 @@ Para configurarlo se puede hacer de forma manual siguiendo las siguientes reglas
 
 Pero también existen herramientas como [GitIgnore.io](https://www.gitignore.io/) que ayudan a configurar el archivo de forma más simple.
 
+### Ejercicio 3a
 
+Obsevé que al repositorio se subieron todos los archivos del repositirio local, el que no me parece que sea necesario es el archivo ejecutable, pues este esta condicionado para funcionar en mi máquina.
