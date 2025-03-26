@@ -1,1 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/kl-E8VQf)
+# TALLER DE LENGUAJES 1
+
+## Trabajo práctico 1
+
+Este repositorio trata sobre lo aprendido en la primera clase de la materia de taller de lenguajes 1, consta de ejercicios simples para la practicar las bases de Git y el uso de GitHub.
