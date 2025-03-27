@@ -4,6 +4,7 @@
 float cuadrado(float numero);
 void cuadradoVoid();
 void direccionDeMemoria();
+void invertir(int a, int b);
 
 int main(){
 
@@ -15,7 +16,8 @@ int main(){
         puts("1-\tCuadrado");
         puts("2-\tCuadradoVoid");
         puts("3-\tDireccion de memoria de una variable");
-        puts("4-\tSalir");
+        puts("4-\tInvertir variables");
+        puts("5-\tSalir");
         scanf("%d", &op);
         switch (op){
         case 1:
@@ -31,14 +33,23 @@ int main(){
         case 3:
             direccionDeMemoria();
             break;
+        
+        case 4:{
+            int num1, num2;
+            printf("Ingrese los dos numeros que quiere invertir, uno por uno\n");
+            scanf("%d", &num1);
+            scanf("%d", &num2);
+            invertir(num1,num2);
+            break;
+        }
 
         default:
             break;
         }
-        if (op<1 || op>4){
-            printf("\nopcion invalida");
+        if (op<1 || op>5){
+            printf("\nOpcion invalida");
         }
-    } while (op != 4);
+    } while (op != 5);
        
     return 0;
 }
@@ -56,7 +67,6 @@ void cuadradoVoid(){
 } 
 
 void direccionDeMemoria(){
-    
     int opcion=0;
     do{
         puts("\n\n\t\t--Seleccione el tipo de variable--");
@@ -80,8 +90,16 @@ void direccionDeMemoria(){
             printf("Contenido de la variable: %.2f\n", num);
         }
         if (opcion < 1 || opcion>3){
-            printf("\nopcion invalida");
+            printf("\nOpcion invalida");
         }
         
     } while (opcion != 3);
+}
+
+void invertir(int a, int b){
+    int temporal = a;
+    a = b;
+    b = temporal;
+    printf("Variable A = %d\n", a);
+    printf("Variable B = %d\n", b);
 }
