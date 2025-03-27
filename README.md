@@ -16,6 +16,13 @@ Para configurarlo se puede hacer de forma manual siguiendo las siguientes reglas
 
 Pero también existen herramientas como [GitIgnore.io](https://www.gitignore.io/) que ayudan a configurar el archivo de forma más simple.
 
-### Ejercicio 3a
+### Ejercicio 3c
 
 Obsevé que al repositorio se subieron todos los archivos del repositirio local, el que no me parece que sea necesario es el archivo ejecutable, pues este esta condicionado para funcionar en mi máquina.
+
+### Ejercicio 3g
+
+Los apartados 2 y 3 muestran lo mismo valor porque el puntero almacena la dirección de la variable, por lo tanto el contenido del puntero y la id de la variable son lo mismo.
+La dirección de memoria del puntero es diferente, porque el puntero en sí es una variable almacenada en otra posición de la memoria.
+El puntero es una tipo de dato que guarda la dirección de la variable, ocupa de por sí un espacio en la memoria distinto e independiente de la variable, entonces es distinto a los demás.
+
