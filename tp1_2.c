@@ -13,7 +13,7 @@ int main(){
         puts("\n\t\t---Seleccione una funcion para utilizar---");
         puts("\n1-\tCuadrado");
         puts("\n2-\tCuadradoVoid");
-        puts("\n1-\tSalir");
+        puts("\n3-\tSalir");
         scanf("%d", &op);
         switch (op){
         case 1:
