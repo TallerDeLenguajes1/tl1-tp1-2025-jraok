@@ -4,7 +4,8 @@
 float cuadrado(float numero);
 void cuadradoVoid();
 void direccionDeMemoria();
-void invertir(int a, int b);
+void invertir(int *a, int *b);
+void orden(int *a, int *b);
 
 int main(){
 
@@ -17,7 +18,8 @@ int main(){
         puts("2-\tCuadradoVoid");
         puts("3-\tDireccion de memoria de una variable");
         puts("4-\tInvertir variables");
-        puts("5-\tSalir");
+        puts("5-\tOrdenar");
+        puts("6-\tSalir");
         scanf("%d", &op);
         switch (op){
         case 1:
@@ -35,21 +37,35 @@ int main(){
             break;
         
         case 4:{
+            fflush(stdin);
             int num1, num2;
             printf("Ingrese los dos numeros que quiere invertir, uno por uno\n");
             scanf("%d", &num1);
             scanf("%d", &num2);
-            invertir(num1,num2);
+            printf("Antes de invertir: A = %d, B = %d\n", num1, num2);
+            invertir(&num1, &num2);
+            printf("Despues de invertir: A = %d, B = %d\n", num1, num2);
+            break;
+        }
+        case 5:{
+            fflush(stdin);
+            int num1, num2;
+            printf("Ingrese los dos numeros que quiere ordenar, uno por uno\n");
+            scanf("%d", &num1);
+            scanf("%d", &num2);
+            printf("Antes de ordenar: A = %d, B = %d\n", num1, num2);
+            orden(&num1, &num2);
+            printf("Despues de ordenar: A = %d, B = %d\n", num1, num2);
             break;
         }
 
         default:
             break;
         }
-        if (op<1 || op>5){
+        if (op<1 || op>6){
             printf("\nOpcion invalida");
         }
-    } while (op != 5);
+    } while (op != 6);
        
     return 0;
 }
@@ -96,10 +112,16 @@ void direccionDeMemoria(){
     } while (opcion != 3);
 }
 
-void invertir(int a, int b){
-    int temporal = a;
-    a = b;
-    b = temporal;
-    printf("Variable A = %d\n", a);
-    printf("Variable B = %d\n", b);
+void invertir(int *a, int *b){
+    int temporal = *a;
+    *a = *b;
+    *b = temporal;
+}
+
+void orden(int *a, int *b) {
+    if (*a > *b) {
+        int temporal = *a;
+        *a = *b;
+        *b = temporal;
+    }
 }
