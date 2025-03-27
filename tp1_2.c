@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <math.h>
+
+float cuadrado(float numero);
 
 int main(){
 
@@ -14,3 +17,5 @@ int main(){
 float cuadrado(float numero){
     return(numero*numero);
 }
+
+
